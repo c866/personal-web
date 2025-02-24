@@ -11,209 +11,383 @@
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-
-
-
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/assets/css/styles.css" rel="stylesheet" />
+        <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">My Website</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <!-- Profile Image -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="assets/images/yuta okkotsu _ jujutsu kaisen (jjk).jpg" alt="Profile Picture" class="rounded-circle me-2" width="40" height="40">
+                        My Website
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#aboutMe">Information</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Testimonial">Testimonials</a></li>
+                            
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Background
+                                </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                    <li><a class="dropdown-item" href="#background">Work</a></li>
+                                    <li><a class="dropdown-item" href="#background">Seminars</a></li>
+                                    <li><a class="dropdown-item" href="#background">Project</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
             </nav>
+            
          <!-- Header with Background Image -->
-         <header class="bg-dark py-5" style="background: url('assets/images/cv.jpg') no-repeat center center; background-size: cover;">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-end text-white" style="backdrop-filter: brightness(100%); padding: 100px 0;">
-                    <div class="col-lg-8 col-xl-7 col-xxl-6 ms-auto"> 
-                        <div class="my-5 text-center">  
-                            <h1 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins', sans-serif;">Christian Angelo Verdad</h1>
-                            <p style="font-family: 'Poppins', sans-serif;">Studying BS Information Systems in Caraga State University</p>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#aboutMe">KNOW ME BETTER!</a>
+         <header class="bg-dark py-5" 
+         style="background: url('assets/images/chris\ \(1\).jpg') no-repeat center center; 
+                background-size: cover; 
+                min-height: 90vh; 
+                display: flex; 
+                align-items: center;">
+                
+         <div class="container px-5">
+             <div class="row gx-5 align-items-center justify-content-end text-white" 
+                  style="padding: 120px 0;">
+                  
+                 <div class="col-lg-8 col-xl-7 col-xxl-6 ms-auto"> 
+                     <div class="my-5 text-center p-4 rounded" 
+                          style="background: rgba(28, 27, 27, 0.6); 
+                                 border-radius: 15px; 
+                                 padding: 30px;">
+                         
+                         <h1 class="display-3 fw-bolder mb-3" 
+                         style="font-family: 'Poppins', sans-serif; 
+                                font-size: 3.5rem; 
+                                background: linear-gradient(90deg, #ffffff, #d1d1d1, #ffffff); 
+                                -webkit-background-clip: text; 
+                                -webkit-text-fill-color: transparent; 
+                                color: #ffffff; /* Fallback for unsupported browsers */
+                                text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+                                letter-spacing: 1.5px;">
+                         Christian Angelo Verdad
+                     </h1>
+                     
+
+                        <p style="font-family: 'Great Vibes', sans-serif; font-size: 1.25rem; color: #f8f9fa; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); letter-spacing: 0.8px;">
+                                Studying BS Information Systems in Caraga State Universit</p>
+                         <div class="d-flex justify-content-center">
+                             <a class="btn btn-primary btn-lg px-5 py-3" href="#aboutMe">KNOW ME BETTER!</a>
+                         </div>
+                         
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </header>
+     
+            <!-- about me section-->
+            <section class="bg-dark py-5 position-relative" id="aboutMe" data-aos="fade-down">
+                <!-- Particle Background -->
+                <div id="particles-js"></div>
+            
+                <div class="container px-5 my-5 position-relative">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <div class="text-center">
+                                <h2 class="fw-bolder" 
+                                    style="font-family: 'Great Vibes', sans-serif; font-size: 3.25rem; 
+                                           color: #f8f9fa; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                                           letter-spacing: 0.8px;">
+                                    My Information
+                                </h2>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </header>
-            <!-- about me section-->
-            <section class="bg-dark py-5" id="aboutMe" style="background: url('assets/images/download\ \(6\).jpg') no-repeat center center; background-size: cover;">
-                <div class="container px-5 my-5">
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <h2 class="fw-bolder mb-0" style="font-family: 'Great Vibes', cursive; font-size: 36px;">My Information</h2>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="row gx-5 row-cols-1 row-cols-md-2">
-                                <div class="col mb-5 h-100">
+                        <div class="col-lg-6 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4 text-center">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-book"></i></div>
-                                    <h2 class="h5">Education</h2>
-                                    <p class="mb-0 font-family: 'Great Vibes', cursive;" >Bachelor of Science in Information Systems <br> Caraga State University-Main</p>
+                                    <h5 class="card-title">Education</h5>
+                                    <p class="card-text">Bachelor of Science in Information Systems <br> Caraga State University-Main</p>
                                 </div>
-                                <div class="col mb-5 h-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4 text-center">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-phone"></i></div>
-                                    <h2 class="h5">Contact me via</h2>
-                                    <p class="mb-0">09165283123 <br> 2002chanv@gmail.com</p>
+                                    <h5 class="card-title">Contact Me</h5>
+                                    <p class="card-text">09165283123 <br> 2002chanv@gmail.com</p>
                                 </div>
-                                <div class="col mb-5 mb-md-0 h-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4 text-center">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-house-door"></i></div>
-                                    <h2 class="h5">Address</h2>
-                                    <p class="mb-0">Brgy. Baan Riverside, Butuan City, AdN</p>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">Brgy. Baan Riverside, Butuan City, AdN</p>
                                 </div>
-                                <div class="col h-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4 text-center">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-facebook"></i></div>
-                                    <h2 class="h5">Social Media Account</h2>
-                                    <a href="https://www.facebook.com/yuta.thestrongest" target="_blank">Facebook</a>
-                                    <p class="mb-0">Christian Verdad</p>
+                                    <h5 class="card-title">Social Media</h5>
+                                    <a href="https://www.facebook.com/yuta.thestrongest" target="_blank" class="text-decoration-none">Facebook</a>
+                                    <p class="card-text">Christian Verdad</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Testimonial section-->
-            <div class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-7">
-                            <div class="text-center">
-                                <div class="fs-4 mb-4" style="font-family: 'Great Vibes', cursive; font-size: 28px !important;">
-                                    "To gain hands-on experience in information systems by helping with tasks like managing
-                                    data, analyzing processes, and creating IT solutions. I aim to apply what I’ve learned in
-                                    school while improving my skills and contributing to the organization’s success."
+            
+            
+              <!-- Testimonial Section -->
+  
+              <section class="bg-dark py-5 position-relative" id="Testimonial" data-aos="fade-up" data-aos-delay="200">    
+<div class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-10 col-xl-7">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-4 text-center">
+                        <blockquote class="blockquote">
+                            <p class="fs-4" style="font-family: 'Great Vibes', cursive; font-size: 28px !important;">
+                                "To gain hands-on experience in information systems by helping with tasks like managing
+                                data, analyzing processes, and creating IT solutions. I aim to apply what I’ve learned in
+                                school while improving my skills and contributing to the organization’s success."
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+            <!-- Blog preview section-->
+            <!-- Include Swiper.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<style>
+    /* Card Animation */
+    .card {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:active {
+        transform: scale(1.05); /* Slight zoom when clicked */
+    }
+
+    /* Swiper styles */
+    .swiper {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        bottom: 10px;
+    }
+</style>
+
+<section class="bg-dark py-5 position-relative" id="background" data-aos="fade-right" data-aos-delay="400"> 
+    <!-- Particle Background -->
+    <div id="particles-background"></div>
+
+
+
+    <div class="container px-5 my-5 position-relative">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <div class="text-center">
+                    <span class="fw-bolder" style="font-family: 'Great Vibes', cursive; font-size: 36px; background-color: rgb(48, 48, 154); color: white; padding: 10px 20px; display: inline-block; clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);">
+                        Background
+                    </span>
+                    <p class="lead fw-normal text-muted mb-5">
+                        A guide to my previous work experience, seminars, and projects
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper for Mobile -->
+        <div class="d-block d-lg-none">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="assets/images/mcdo.jpg" alt="Mcdo">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Work</div>
+                                <h5 class="card-title mb-3">McDonald's</h5>
+                                <p class="card-text">I was a service crew at McDonald's in 2022, where I developed skills, knowledge, and adaptability. It was a rollercoaster experience but very rewarding.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="small">
+                                    <div class="fw-bold">McDonald's Drive Thru</div>
+                                    <div class="text-muted">January 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="assets/images/devfesr.jpg" alt="Devfest">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Seminars</div>
+                                <h5 class="card-title mb-3">Trainings and Seminars</h5>
+                                <p class="card-text">The DevFest at CSU in October covered AI, web development, and cloud computing. It was a great opportunity for networking and learning.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="small">
+                                    <div class="fw-bold">DevFest</div>
+                                    <div class="text-muted">October 2024</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="assets/images/kaps.png" alt="Kapnayan">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Recent Project</div>
+                                <h5 class="card-title mb-3">KAPNAYAN-CSU Website</h5>
+                                <p class="card-text">A website for Chemistry students to interact, post, and share feedback. It promotes event management and transparent collaboration.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="small">
+                                    <div class="fw-bold">Kapnayan-CSU</div>
+                                    <div class="text-muted">Dec 2024</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Blog preview section-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="text-center">
-                                <h2 class="fw-bolder">Background</h2>
-                                <p class="lead fw-normal text-muted mb-5">A guide to my previous work experience, seminars, and projects</p>
+                <!-- Swiper Navigation -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- Grid View for Desktop -->
+        <div class="d-none d-lg-block">
+            <div class="row gx-5">
+                <!-- Card 1 -->
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="assets/images/mcdo.jpg" alt="Mcdo">
+                        <div class="card-body p-4">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">Work</div>
+                            <h5 class="card-title mb-3">McDonald's</h5>
+                            <p class="card-text">I was a service crew at McDonald's in 2022, where I developed skills, knowledge, and adaptability. It was a rollercoaster experience but very rewarding.</p>
+                        </div>
+                        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                            <div class="small">
+                                <div class="fw-bold">McDonald's Drive Thru</div>
+                                <div class="text-muted">January 2022</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Work</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">McDonald's</h5></a>
-                                    <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Kelly Rowan</div>
-                                                <div class="text-muted">March 12, 2023 &middot; 6 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="assets/images/devfesr.jpg" alt="Devfest">
+                        <div class="card-body p-4">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">Seminars</div>
+                            <h5 class="card-title mb-3">Trainings and Seminars</h5>
+                            <p class="card-text">The DevFest at CSU in October covered AI, web development, and cloud computing. It was a great opportunity for networking and learning.</p>
                         </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Seminars</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Trainings and seminars</h5></a>
-                                    <p class="card-text mb-0">This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Josiah Barclay</div>
-                                                <div class="text-muted">March 23, 2023 &middot; 4 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Recent Project</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">KAPNAYAN-CSU Website</h5></a>
-                                    <p class="card-text mb-0">Some more quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Evelyn Martinez</div>
-                                                <div class="text-muted">April 2, 2023 &middot; 10 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                            <div class="small">
+                                <div class="fw-bold">DevFest</div>
+                                <div class="text-muted">October 2024</div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="assets/images/kaps.png" alt="Kapnayan">
+                        <div class="card-body p-4">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">Recent Project</div>
+                            <h5 class="card-title mb-3">KAPNAYAN-CSU Website</h5>
+                            <p class="card-text">A website for Chemistry students to interact, post, and share feedback. It promotes event management and transparent collaboration.</p>
+                        </div>
+                        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                            <div class="small">
+                                <div class="fw-bold">Kapnayan-CSU</div>
+                                <div class="text-muted">Dec 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
                     <!-- Call to action-->
-                    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                    <section class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 ">
                         <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
                             <div class="mb-4 mb-xl-0">
-                                <div class="fs-3 fw-bold text-white">New products, delivered to you.</div>
-                                <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
-                            </div>
-                            <div class="ms-xl-4">
-                                <div class="input-group mb-2">
-                                    <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
-                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
-                                </div>
-                                <div class="small text-white-50">We care about privacy, and will never share your data.</div>
-                            </div>
+                                <div class="fs-3 fw-bold text-white">"A Broken Crayon Still COLORS"</div>
+                                <div class="text-white-50">Currently the best quote</div>
+                            </div>    
                         </div>
-                    </aside>
+                    </section>
                 </div>
             </section>
         </main>
@@ -236,5 +410,28 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="/assets/js/scripts.js"></script>
+        <!--Swipe js-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="assets/app.js"></script>
+
+        <script src="particles.js"></script> 
+        <script src="assets/particles-init.js"></script>
+        
+        <!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: "ease-out",
+    once: false,
+    mirror: true
+  });
+</script>
+
+          
+
+
+
     </body>
 </html>

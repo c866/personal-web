@@ -10846,3 +10846,57 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+
+.cursive-text {
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+/* Ensure the section is positioned relative for particles */
+#aboutMe {
+  position: relative;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Full-screen particle background inside section */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Keeps it behind content */
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensures particles are behind content */
+}
+
+#aboutMe {
+  position: relative;
+  overflow: hidden; /* Prevents scrolling issues */
+}
+
+
+/* Background Section Particles */
+#particles-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensures particles are behind content */
+}
+
+#background {
+  position: relative;
+  overflow: hidden; /* Prevents scrollbars */
+}
